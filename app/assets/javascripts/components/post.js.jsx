@@ -3,7 +3,7 @@ var Post = React.createClass({
   render: function() {
     return (
       <div className="tweet-box">
-         {this.props.text}
+         <p className="tweet-text">{this.props.text}</p>
          <div className="tweet-stamps">
          {this.props.created_at}
          </div>
@@ -111,6 +111,6 @@ var PostForm = React.createClass({
 });
 
 ReactDOM.render(
-  <PostDiv  pollInterval={3000} />,
+  <PostDiv  pollInterval={5000} />,
   document.getElementById('post-feed')
 );
